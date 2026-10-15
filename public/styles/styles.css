@@ -49,3 +49,7 @@ input[type="text"],input[type="email"],select,textarea {
     color: red;
     display: none;
 }
+
+.spaced-label{
+    margin-top: 1rem;
+}

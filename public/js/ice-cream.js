@@ -11,7 +11,7 @@ document.getElementById("ice-cream-form").onsubmit = () => {
     }
 
     let email = document.getElementById("inputEmail").value.trim();
-    if(email === ""){
+       if (email === "" || !email.includes("@")) {
         document.getElementById("error-email").style.display = "block";
         isValid = false;
     }
@@ -35,11 +35,6 @@ document.getElementById("ice-cream-form").onsubmit = () => {
         isValid=false;
     }
 
-    let size = document.getElementById("size").value;
-    if(size==="none"){
-        document.getElementById("error-size").style.display = "block";
-        isValid=false;
-    }
 
     return isValid;
     
