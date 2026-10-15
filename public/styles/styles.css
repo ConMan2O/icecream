@@ -44,3 +44,8 @@ input[type="text"],input[type="email"],select,textarea {
     border: none;
     border-radius: 4px;
 }
+
+.error{
+    color: red;
+    display: none;
+}
